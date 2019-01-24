@@ -39,18 +39,19 @@ function transformFromGCJToWGS(latitude, longitude)
 
 在您要使用的页面对应的.JS文件中引入
 ```ruby
-	var util = require('../../utils/WSCoordinate.js')  
+    var util = require('../../utils/WSCoordinate.js')  
 ```
 
 在您需要转换的地方使用
 ```ruby
-	//将WGS-84(国际标准)转为GCJ-02(火星坐标)
+
+    //将WGS-84(国际标准)转为GCJ-02(火星坐标)
     var result1 = util.transformFromWGSToGCJ(32.0806670849, 118.9060163095);
     
     // 将GCJ-02(火星坐标)转为百度坐标
     var result2 = util.transformFromGCJToBaidu(32.0806670849, 118.9060163095);
 
-	//将百度坐标转为GCJ-02(火星坐标)
+    //将百度坐标转为GCJ-02(火星坐标)
     var result3 = util.transformFromBaiduToGCJ(32.0806670849, 118.9060163095);
 
     //将GCJ-02(火星坐标)转为WGS-84
@@ -63,7 +64,6 @@ function transformFromGCJToWGS(latitude, longitude)
 	latitude: 纬度的值, 
 	longitude: 经度的值
 }
-
 ```
 
 
