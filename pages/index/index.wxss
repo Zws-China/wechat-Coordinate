@@ -1,0 +1,31 @@
+.BGView {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+}
+
+.latLonText {
+  width: 690rpx;
+  height: 80rpx;
+  margin: 30rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.typesView {
+  margin: 30rpx;
+  height: 150rpx;
+  background-color: lightgray;
+}
+
+.titleView {
+  font-size: 30rpx;
+  height: 50rpx;
+}
+
+.valueView {
+  font-size: 30rpx;
+  height: 100rpx;
+  color: orangered;
+}

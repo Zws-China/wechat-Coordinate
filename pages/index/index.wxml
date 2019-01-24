@@ -1,0 +1,12 @@
+<view class="BGView">
+
+  <view class='latLonText'>当前：32.0806670849,118.9060163095</view>
+
+
+  <view wx:for='{{types}}' wx:key='key' class='typesView'>
+    <view class='titleView'>{{item}}</view>
+    <view class='valueView'>转换后：{{results[index].latitude}},{{results[index].longitude}}</view>
+  </view>
+
+
+</view>
