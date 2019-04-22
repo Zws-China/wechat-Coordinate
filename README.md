@@ -2,6 +2,10 @@
 # wechat-Coordinate
 微信小程序经纬度转换，坐标系转换💯 WGS-84(国际标准)、GCJ-02(火星坐标) 、百度坐标相互转换
 
+此转换库为本地坐标转换库，不需要依赖网络资源，计算速度高。可在极短时间内转换大量坐标。
+如果使用过程中有问题，请issue我 (｡♥‿♥｡)  <br>
+如果觉得对你还有些用，顺手点一下star吧 (｡♥‿♥｡) <br>
+
 # Demo截图
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019012411184361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NTk4MDc3,size_16,color_FFFFFF,t_70)
 # 方法
