@@ -42,10 +42,10 @@ function transformFromWGSToGCJ(latitude, longitude) {
 /**
  *  将GCJ-02(火星坐标)转为百度坐标:
  */
-function transformFromGCJToBaidu(latitude, longitude) {
-  var pi = 3.14159265358979324;
+function transformFromGCJToBaidu(latitude, longitude) {  
+  var pi = 3.14159265358979324 * 3000.0 / 180.0;
 
-  var z = Math.sqrt(longitude * longitude + latitude * latitude) + 0.00002 * Math.sqrt(latitude * pi);
+  var z = Math.sqrt(longitude * longitude + latitude * latitude) + 0.00002 * Math.sin(latitude * pi);
   var theta = Math.atan2(latitude, longitude) + 0.000003 * Math.cos(longitude * pi);
   var a_latitude = (z * Math.sin(theta) + 0.006);
   var a_longitude = (z * Math.cos(theta) + 0.0065);
